@@ -1,0 +1,25 @@
+Total Orders = COUNTROWS(Orders)
+
+Returned Orders =
+CALCULATE([Total Orders], Orders[Is_Returned] = 1)
+
+Not Returned Orders =
+[Total Orders] - [Returned Orders]
+
+Return Rate % =
+DIVIDE([Returned Orders], [Total Orders], 0)
+
+Gross Order Value =
+SUM(Orders[Order_Value])
+
+Returned Order Value =
+SUM(Orders[Returned_Value])
+
+Average Order Value =
+DIVIDE([Gross Order Value], [Total Orders], 0)
+
+Average Delivery Days =
+AVERAGE(Orders[Delivery_Days])
+
+Return Rate Label =
+FORMAT([Return Rate %], "0.0%")

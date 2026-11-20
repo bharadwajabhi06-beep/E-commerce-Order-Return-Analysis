@@ -1,0 +1,1 @@
+ecommerce_orders.csv contains 2,500 synthetic demonstration records generated with a fixed random seed. It is not real company/customer data. Is_Returned is the binary target; Return_Reason is an outcome field.

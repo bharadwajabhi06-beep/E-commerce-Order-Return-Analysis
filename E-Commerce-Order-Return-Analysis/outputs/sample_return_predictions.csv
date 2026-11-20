@@ -1,0 +1,501 @@
+Product_Category,Product_Price,Quantity,Discount_Percent,Payment_Method,Shipping_Type,Delivery_Days,Customer_Rating,Return_Probability,Risk_Level
+Fashion,7291.79,3,30,COD,Standard,4,5,0.5987373641733386,Medium
+Electronics,9160.96,1,15,UPI,Standard,2,4,0.23291916804274385,Low
+Books,258.29,3,10,Debit Card,Standard,6,4,0.17642513499356477,Low
+Fashion,663.34,3,30,UPI,Standard,6,5,0.3816506706566055,Medium
+Fashion,5005.44,2,25,COD,Express,5,5,0.48242000696633003,Medium
+Fashion,5956.74,3,30,UPI,Standard,7,5,0.697101572100277,High
+Fashion,2858.7,2,5,COD,Standard,3,3,0.5151840656610888,Medium
+Home & Kitchen,8319.55,3,20,Credit Card,Standard,4,4,0.23488951753849968,Low
+Books,619.92,3,15,Credit Card,Standard,4,4,0.18265558740687957,Low
+Home & Kitchen,7623.24,4,5,COD,Standard,5,4,0.2814390244550324,Low
+Fashion,3880.14,1,20,UPI,Standard,3,4,0.45575943059212565,Medium
+Sports,3542.36,4,0,UPI,Standard,5,3,0.1438756337891655,Low
+Beauty,1362.93,2,15,Debit Card,Standard,3,5,0.24927746150619212,Low
+Sports,8616.01,3,5,UPI,Standard,3,4,0.13902399918888103,Low
+Electronics,10660.96,3,30,COD,Standard,4,3,0.41937443202397523,Medium
+Fashion,7065.87,3,15,UPI,Express,7,4,0.6876769544559497,High
+Books,477.23,3,10,UPI,Express,1,4,0.15927802205399866,Low
+Home & Kitchen,13011.71,3,15,Credit Card,Standard,5,4,0.2656437433662499,Low
+Electronics,12654.43,2,25,COD,Express,2,5,0.44110171647920016,Medium
+Fashion,6807.91,2,20,Credit Card,Standard,2,4,0.42913059524336067,Medium
+Beauty,2677.39,1,25,COD,Express,3,4,0.37879130358080615,Medium
+Fashion,3575.33,2,15,UPI,Standard,1,3,0.43930837356317154,Medium
+Sports,9078.05,2,25,COD,Standard,5,2,0.5206178690120182,Medium
+Home & Kitchen,11778.67,4,5,Debit Card,Express,2,4,0.16661332059219178,Low
+Books,1603.84,1,10,COD,Standard,6,4,0.2167200088783881,Low
+Electronics,16300.17,2,10,Debit Card,Express,7,3,0.33281931448409274,Medium
+Home & Kitchen,14267.81,2,10,Debit Card,Standard,7,5,0.40182820718991147,Medium
+Fashion,2783.63,2,15,UPI,Standard,4,3,0.39567163083973755,Medium
+Sports,2809.13,1,0,Credit Card,Standard,8,3,0.31976167306086195,Medium
+Fashion,3747.57,3,15,Credit Card,Standard,3,2,0.5915159250359864,Medium
+Fashion,7981.78,1,0,COD,Standard,5,5,0.4350171088138524,Medium
+Beauty,3413.66,3,20,Credit Card,Standard,7,2,0.6634058912496812,High
+Sports,686.64,1,25,Credit Card,Standard,5,4,0.30093759951243937,Medium
+Home & Kitchen,1728.04,1,25,COD,Standard,5,2,0.6182299277120886,High
+Fashion,2372.32,4,5,UPI,Standard,3,3,0.5085351415784392,Medium
+Electronics,694.18,1,10,Credit Card,Express,5,3,0.2511465610286475,Low
+Sports,1866.29,1,10,UPI,Standard,9,3,0.3054729133968217,Medium
+Home & Kitchen,1342.8,1,15,UPI,Standard,8,3,0.3215353416663226,Medium
+Fashion,2702.57,1,0,UPI,Standard,5,3,0.4863490179417307,Medium
+Electronics,36557.96,4,5,Debit Card,Express,4,4,0.2238549840432351,Low
+Home & Kitchen,11063.88,4,25,Credit Card,Standard,3,3,0.20009671662154344,Low
+Home & Kitchen,6000.0,3,30,Credit Card,Express,6,3,0.3390301617521823,Medium
+Beauty,2562.02,1,0,COD,Standard,2,3,0.33087229793448647,Medium
+Fashion,1360.96,2,25,UPI,Standard,4,4,0.5036532413060473,Medium
+Fashion,7017.61,1,10,Debit Card,Standard,2,5,0.4999193604033841,Medium
+Electronics,13018.53,1,15,UPI,Same Day,5,3,0.18506566315195389,Low
+Home & Kitchen,4728.03,1,10,UPI,Standard,3,3,0.16668755051162285,Low
+Fashion,876.09,2,25,COD,Standard,5,3,0.48254677140881536,Medium
+Books,1395.31,2,0,Debit Card,Standard,7,4,0.21493096302315956,Low
+Fashion,4996.45,2,0,UPI,Standard,4,4,0.45087057049766444,Medium
+Home & Kitchen,14847.29,3,10,UPI,Standard,3,3,0.16417476176451462,Low
+Fashion,2443.09,4,10,UPI,Express,6,4,0.40320396246700657,Medium
+Home & Kitchen,14294.92,1,20,COD,Standard,3,5,0.2731040438070194,Low
+Beauty,164.32,4,0,UPI,Same Day,5,4,0.2226391024220064,Low
+Fashion,2625.22,4,25,Credit Card,Express,6,5,0.4328001688443093,Medium
+Home & Kitchen,5972.05,2,20,Net Banking,Standard,7,4,0.44844550432805275,Medium
+Home & Kitchen,8237.71,1,30,COD,Standard,6,3,0.33885992435858203,Medium
+Electronics,6170.49,3,10,COD,Standard,4,3,0.32849991424880914,Medium
+Electronics,28091.4,2,20,Net Banking,Standard,4,5,0.3587185409448611,Medium
+Electronics,30499.81,3,15,Credit Card,Express,6,5,0.30777665719187847,Medium
+Home & Kitchen,8805.91,4,20,COD,Standard,4,4,0.24919808768836976,Low
+Books,1600.84,3,15,UPI,Standard,4,5,0.17130839258483707,Low
+Books,1099.3,4,10,Credit Card,Standard,7,5,0.22972676850698084,Low
+Home & Kitchen,6977.89,3,30,Credit Card,Same Day,8,4,0.4821628582218673,Medium
+Electronics,18118.11,2,5,COD,Standard,3,4,0.2641703879301459,Low
+Fashion,2954.78,2,5,UPI,Express,1,4,0.4675112396700027,Medium
+Electronics,31947.97,2,0,COD,Standard,5,3,0.22528769200180487,Low
+Electronics,29647.32,2,15,Credit Card,Express,5,5,0.28919646518606207,Low
+Electronics,20557.82,2,5,COD,Standard,5,4,0.27809793590060344,Low
+Beauty,1622.01,4,25,Net Banking,Standard,5,4,0.26439153174238933,Low
+Fashion,5322.92,2,5,Net Banking,Standard,8,3,0.5828109089724565,Medium
+Fashion,3401.14,4,5,COD,Express,7,3,0.6795229858732292,High
+Fashion,6288.32,3,10,UPI,Express,9,4,0.6405278063415637,High
+Home & Kitchen,15925.73,2,0,UPI,Same Day,3,5,0.129008375030772,Low
+Home & Kitchen,3880.86,3,10,Credit Card,Standard,7,5,0.40690983632743116,Medium
+Home & Kitchen,7971.53,1,30,Debit Card,Standard,7,3,0.41671855078114073,Medium
+Beauty,2031.67,2,5,Debit Card,Standard,8,4,0.3484894039050357,Medium
+Beauty,3265.23,2,0,UPI,Express,6,4,0.1470638273738202,Low
+Home & Kitchen,15800.7,4,0,Credit Card,Express,3,5,0.1929901677586722,Low
+Fashion,1036.12,1,25,UPI,Standard,3,4,0.45837081982114586,Medium
+Fashion,2629.65,2,10,UPI,Standard,3,5,0.37147926707299106,Medium
+Electronics,22890.57,2,0,Net Banking,Same Day,2,4,0.16893772689983028,Low
+Electronics,24039.31,3,25,Net Banking,Express,7,5,0.6110834918255689,High
+Sports,8579.13,1,25,UPI,Express,3,3,0.2553490753139076,Low
+Fashion,1170.91,3,15,UPI,Standard,3,4,0.42514326036603717,Medium
+Sports,4113.23,4,10,Debit Card,Standard,3,5,0.16377518884917733,Low
+Books,1032.64,4,0,UPI,Standard,7,5,0.2709595225542847,Low
+Home & Kitchen,918.01,3,20,Credit Card,Same Day,6,4,0.21747820511640364,Low
+Fashion,1820.75,1,10,Credit Card,Express,5,5,0.30275008889131516,Medium
+Fashion,4623.3,3,30,Net Banking,Standard,4,2,0.6498147265435942,High
+Beauty,1346.7,2,10,COD,Express,6,4,0.1976686301899633,Low
+Home & Kitchen,3674.38,2,5,Credit Card,Standard,7,4,0.40596293452472276,Medium
+Home & Kitchen,4673.1,4,30,Credit Card,Standard,2,3,0.2721301635239676,Low
+Fashion,874.22,4,20,UPI,Express,8,3,0.5800115284790814,Medium
+Sports,644.92,3,5,Credit Card,Express,6,3,0.12838791915818767,Low
+Home & Kitchen,9488.79,1,10,COD,Standard,4,4,0.2743716299933108,Low
+Sports,3002.97,1,30,UPI,Express,8,4,0.4972553787607082,Medium
+Fashion,4924.84,3,25,UPI,Express,6,3,0.45712467336296025,Medium
+Fashion,4127.45,3,15,Credit Card,Standard,8,4,0.6279055526134797,High
+Home & Kitchen,9594.15,4,15,COD,Standard,4,4,0.27026516891183594,Low
+Home & Kitchen,13598.22,3,15,COD,Express,4,4,0.2963702496718217,Low
+Electronics,20039.84,3,15,UPI,Standard,4,3,0.18819698250500083,Low
+Fashion,7300.9,3,10,Credit Card,Same Day,4,5,0.4404227080370381,Medium
+Home & Kitchen,8352.18,4,25,Net Banking,Standard,1,5,0.2080268875798155,Low
+Home & Kitchen,712.25,4,20,Credit Card,Standard,1,4,0.180943611167752,Low
+Books,1504.9,2,5,COD,Standard,5,4,0.24632577293978825,Low
+Sports,6777.81,3,5,UPI,Standard,6,5,0.1535996584579219,Low
+Fashion,3304.15,2,10,Credit Card,Express,7,4,0.4588974660096207,Medium
+Sports,11938.94,1,15,Net Banking,Same Day,6,4,0.17553330978040918,Low
+Fashion,3073.8,1,15,COD,Standard,5,3,0.4856729439948548,Medium
+Fashion,5624.67,2,0,UPI,Standard,3,4,0.4655476176857363,Medium
+Fashion,2447.91,4,15,UPI,Standard,4,5,0.43265547861979975,Medium
+Beauty,1947.69,1,15,Debit Card,Express,3,4,0.24420450069761332,Low
+Beauty,3948.88,3,15,Credit Card,Standard,3,4,0.2781796064176332,Low
+Sports,2836.54,2,20,Debit Card,Standard,3,5,0.2715750602486128,Low
+Electronics,42757.34,2,5,COD,Same Day,4,2,0.5008107627140301,Medium
+Electronics,8761.77,4,10,COD,Standard,7,2,0.728746655340602,High
+Fashion,4533.2,4,20,Credit Card,Standard,5,4,0.5288170858312289,Medium
+Electronics,7427.55,4,20,Net Banking,Standard,4,5,0.36323551341738497,Medium
+Fashion,4174.4,2,10,COD,Express,5,4,0.3667362464412347,Medium
+Electronics,28093.6,4,10,Net Banking,Express,2,4,0.18645066996772505,Low
+Electronics,25800.34,3,10,Credit Card,Standard,6,4,0.41120235850623993,Medium
+Fashion,7265.24,2,20,Debit Card,Standard,6,4,0.4157840134915561,Medium
+Electronics,42132.01,2,15,COD,Standard,6,5,0.4222427985247293,Medium
+Electronics,44166.81,4,25,Net Banking,Standard,2,3,0.21171480818094313,Low
+Books,1405.36,4,20,COD,Standard,5,3,0.2902723435983551,Low
+Beauty,935.95,2,15,COD,Standard,9,4,0.39599150789224635,Medium
+Books,475.58,1,15,COD,Same Day,2,4,0.20292216360477508,Low
+Beauty,3525.43,2,5,Net Banking,Standard,5,4,0.19578381347458448,Low
+Books,1782.05,3,10,Credit Card,Express,2,3,0.19226389857216356,Low
+Books,225.28,4,5,Credit Card,Standard,5,4,0.13344600539743393,Low
+Fashion,7743.84,4,20,Debit Card,Standard,1,3,0.40730372872037984,Medium
+Beauty,3432.51,2,5,UPI,Express,3,5,0.16570293949212733,Low
+Books,572.85,1,25,Net Banking,Standard,5,3,0.21234551607390595,Low
+Home & Kitchen,17218.73,4,15,Credit Card,Same Day,5,3,0.2422598278222149,Low
+Electronics,34365.46,4,30,UPI,Standard,5,5,0.31052292376672364,Medium
+Sports,6020.21,3,5,Net Banking,Standard,6,4,0.12653495456219854,Low
+Sports,6234.28,2,0,Credit Card,Same Day,5,2,0.2205407211108795,Low
+Home & Kitchen,4256.73,4,10,UPI,Express,6,3,0.22379754891875028,Low
+Fashion,2649.8,3,20,COD,Standard,2,3,0.571562755058501,Medium
+Books,969.22,1,10,COD,Same Day,8,3,0.3380360483107844,Medium
+Electronics,39337.39,3,25,COD,Standard,5,3,0.43397108774570503,Medium
+Electronics,19840.16,2,20,Credit Card,Express,5,4,0.4098130142746964,Medium
+Electronics,1879.27,1,20,Debit Card,Standard,8,4,0.5083444200027092,Medium
+Sports,8078.05,3,10,Credit Card,Same Day,8,4,0.23177646088282913,Low
+Fashion,1401.8,3,10,UPI,Standard,5,3,0.3175112441917454,Medium
+Sports,11396.6,1,15,COD,Standard,7,4,0.5980678767755327,Medium
+Electronics,32048.03,2,20,Credit Card,Standard,6,4,0.4009804543483947,Medium
+Fashion,2814.64,2,25,UPI,Express,4,4,0.40991679195926456,Medium
+Home & Kitchen,11634.64,4,15,UPI,Standard,2,3,0.2621741491012025,Low
+Books,1057.12,2,0,UPI,Standard,4,3,0.16965131152844187,Low
+Home & Kitchen,3307.95,1,30,COD,Standard,7,4,0.633684629163403,High
+Home & Kitchen,14932.85,3,0,COD,Standard,5,4,0.29304758239330936,Low
+Home & Kitchen,15600.77,3,25,COD,Express,4,5,0.30838446816499443,Medium
+Sports,6616.72,4,10,COD,Standard,7,2,0.7712855769616254,High
+Fashion,2723.6,3,5,COD,Standard,4,4,0.40561532621042046,Medium
+Home & Kitchen,7778.16,2,5,UPI,Standard,4,3,0.12172640084712874,Low
+Electronics,12457.82,4,10,COD,Standard,5,3,0.27733813248264433,Low
+Books,880.63,3,5,UPI,Standard,3,4,0.12444758935787624,Low
+Home & Kitchen,9255.57,1,20,Credit Card,Express,5,3,0.36732985787368705,Medium
+Fashion,7629.56,3,10,UPI,Express,4,3,0.3120493061503188,Medium
+Fashion,7032.02,3,15,UPI,Standard,2,4,0.4076290772991227,Medium
+Beauty,2790.03,2,15,Debit Card,Express,4,2,0.5140046236958037,Medium
+Electronics,8426.97,4,10,Credit Card,Same Day,8,4,0.243306452685964,Low
+Fashion,4504.58,1,5,UPI,Standard,2,2,0.582042205936769,Medium
+Books,1000.36,1,20,Net Banking,Express,9,4,0.2525272081520937,Low
+Home & Kitchen,10048.43,1,10,UPI,Standard,8,5,0.2921138678286554,Low
+Fashion,1149.77,3,10,COD,Standard,5,4,0.3739217422092554,Medium
+Fashion,7793.45,4,10,Net Banking,Express,8,2,0.6550494144676684,High
+Fashion,1098.53,4,10,Credit Card,Express,8,3,0.4329457728041814,Medium
+Electronics,721.83,4,20,UPI,Standard,9,4,0.3801086215496368,Medium
+Books,737.97,4,20,Credit Card,Express,5,3,0.16807739514155456,Low
+Fashion,7473.88,1,25,Debit Card,Express,3,3,0.45735154276623297,Medium
+Books,151.36,1,0,UPI,Standard,6,4,0.24959709029436333,Low
+Fashion,6761.95,4,5,UPI,Standard,4,3,0.42650797099604365,Medium
+Fashion,7401.23,4,30,COD,Standard,3,2,0.6450021746547259,High
+Fashion,2682.62,4,25,Net Banking,Standard,4,2,0.7296702442490199,High
+Fashion,4181.06,2,30,Debit Card,Express,3,3,0.4667169283305908,Medium
+Books,642.13,2,0,UPI,Express,7,4,0.242890870583252,Low
+Sports,4856.5,3,20,Debit Card,Standard,5,5,0.3061117535082382,Medium
+Electronics,37374.83,3,30,Credit Card,Express,5,5,0.38934311723772996,Medium
+Fashion,6527.01,3,25,UPI,Standard,8,4,0.8165550961237082,High
+Home & Kitchen,10827.3,4,30,Credit Card,Standard,5,2,0.5431806224190716,Medium
+Home & Kitchen,11113.97,2,25,COD,Standard,9,5,0.6465297872012803,High
+Electronics,5489.48,4,30,UPI,Standard,4,4,0.4551901626262319,Medium
+Home & Kitchen,14471.89,3,15,Credit Card,Standard,5,3,0.16016283163575276,Low
+Electronics,39023.07,3,25,COD,Same Day,8,4,0.5486585599589862,Medium
+Books,1306.87,1,15,UPI,Standard,6,2,0.30171442683690647,Medium
+Beauty,2921.88,4,0,Credit Card,Express,5,4,0.24817921958822547,Low
+Books,1203.66,4,20,COD,Express,7,5,0.40973032755803174,Medium
+Fashion,4858.95,2,20,COD,Same Day,4,2,0.5200831648520964,Medium
+Home & Kitchen,4467.91,3,25,UPI,Standard,9,4,0.537408689593375,Medium
+Sports,5337.73,3,20,UPI,Standard,6,4,0.3575613195455033,Medium
+Fashion,6437.85,2,30,UPI,Express,5,2,0.572992019325273,Medium
+Fashion,3225.63,4,20,UPI,Standard,7,3,0.7755922441461062,High
+Home & Kitchen,11789.1,1,20,UPI,Standard,5,4,0.21042166134441975,Low
+Fashion,4057.6,3,5,COD,Standard,2,3,0.511406667526681,Medium
+Sports,11892.67,1,15,UPI,Standard,1,4,0.18639279951368362,Low
+Books,365.67,3,25,UPI,Express,5,5,0.1652309008054286,Low
+Home & Kitchen,3004.79,1,0,Debit Card,Express,6,4,0.18961981496036162,Low
+Home & Kitchen,4613.43,2,20,COD,Standard,7,4,0.6383416962951822,High
+Beauty,2561.01,2,10,COD,Standard,6,2,0.6662788477393355,High
+Electronics,34936.31,4,5,Credit Card,Express,1,4,0.22253001311425422,Low
+Books,214.18,2,20,COD,Standard,6,5,0.2309040789476043,Low
+Sports,5061.65,4,5,UPI,Express,3,3,0.2546984416947423,Low
+Electronics,41399.38,4,25,UPI,Standard,5,4,0.30853155154940765,Medium
+Beauty,1697.83,1,20,Debit Card,Express,8,4,0.32659544444897554,Medium
+Beauty,2935.36,2,10,UPI,Standard,3,3,0.24069902427816267,Low
+Fashion,3464.35,3,30,UPI,Standard,6,5,0.45087444339335553,Medium
+Home & Kitchen,5697.71,4,30,COD,Same Day,7,5,0.5350488730763207,Medium
+Fashion,2100.59,2,15,COD,Standard,1,4,0.5237362016006913,Medium
+Beauty,2720.86,4,5,UPI,Standard,4,4,0.23133859831399065,Low
+Home & Kitchen,1518.25,1,15,Debit Card,Standard,7,4,0.49700444898867113,Medium
+Sports,5471.3,3,0,Net Banking,Express,5,3,0.20018777472997312,Low
+Beauty,2105.85,4,10,Credit Card,Standard,7,3,0.2907760522094734,Low
+Home & Kitchen,11104.21,2,10,Net Banking,Express,3,4,0.15107379126018808,Low
+Home & Kitchen,667.93,1,15,Credit Card,Standard,6,2,0.3972971647259234,Medium
+Beauty,3222.78,3,25,COD,Standard,5,3,0.454411380857657,Medium
+Fashion,6240.73,4,30,Credit Card,Standard,5,4,0.5467919288974268,Medium
+Electronics,6204.1,3,10,UPI,Standard,4,4,0.25250695044141397,Low
+Sports,3277.82,4,5,Credit Card,Standard,5,3,0.10455680359893336,Low
+Beauty,2834.96,4,5,COD,Standard,3,3,0.29482314545976623,Low
+Fashion,5612.11,2,5,COD,Standard,2,3,0.5587953270274252,Medium
+Fashion,2523.66,3,15,COD,Standard,3,2,0.7482519440106191,High
+Beauty,3457.46,3,5,UPI,Express,1,3,0.1430127709057605,Low
+Fashion,4760.49,1,10,UPI,Express,5,3,0.34358994065634896,Medium
+Fashion,7969.99,4,30,COD,Same Day,3,4,0.4770303126935038,Medium
+Fashion,5133.68,3,20,COD,Standard,1,3,0.6016362846644793,High
+Fashion,6564.51,1,20,UPI,Same Day,5,4,0.29805365849365123,Low
+Beauty,1120.45,1,30,UPI,Express,7,3,0.2625046395756901,Low
+Home & Kitchen,7251.24,3,30,COD,Standard,2,3,0.2772008899545562,Low
+Electronics,24373.65,3,30,COD,Standard,2,2,0.6099014705052691,High
+Beauty,2518.57,1,20,Credit Card,Standard,4,3,0.27106747307281887,Low
+Home & Kitchen,2518.27,3,30,Credit Card,Standard,3,4,0.27526806141891175,Low
+Sports,9556.27,4,25,COD,Express,6,4,0.3072148436900794,Medium
+Fashion,3279.94,1,15,Debit Card,Standard,6,5,0.35351161557836724,Medium
+Electronics,31064.81,3,5,Debit Card,Standard,3,2,0.32383347897318393,Medium
+Home & Kitchen,4107.82,2,0,COD,Standard,10,3,0.5762963789878048,Medium
+Electronics,27032.65,1,20,COD,Standard,4,4,0.4131515394919216,Medium
+Sports,5308.4,3,15,COD,Express,4,4,0.29991884376769473,Low
+Fashion,1819.26,1,30,Credit Card,Express,8,5,0.5276936977941485,Medium
+Fashion,1257.69,2,5,Credit Card,Standard,7,2,0.6790360799273661,High
+Fashion,4069.49,1,15,Debit Card,Express,3,4,0.42955497566056294,Medium
+Fashion,2386.17,2,5,Net Banking,Express,2,4,0.3707263518197185,Medium
+Fashion,4209.3,3,20,Credit Card,Standard,4,5,0.5131829735491059,Medium
+Home & Kitchen,8769.33,3,20,Debit Card,Standard,6,5,0.2655695787293142,Low
+Electronics,11837.37,3,10,COD,Standard,6,2,0.5644297416995551,Medium
+Fashion,4645.1,1,0,UPI,Same Day,7,3,0.6415896238823227,High
+Fashion,2120.02,2,30,UPI,Same Day,6,5,0.4202711688250429,Medium
+Electronics,15643.38,1,20,Net Banking,Standard,3,3,0.30840155547232173,Medium
+Sports,5383.01,4,15,COD,Standard,2,4,0.22913832826000752,Low
+Home & Kitchen,339.56,2,5,COD,Standard,5,3,0.2559982347237851,Low
+Books,985.46,2,25,UPI,Express,3,4,0.16350315549863356,Low
+Fashion,2947.1,3,0,COD,Standard,7,5,0.781319272951496,High
+Fashion,6046.24,2,15,COD,Standard,6,4,0.3906837874010991,Medium
+Home & Kitchen,11819.38,3,10,UPI,Standard,5,5,0.2285487186939645,Low
+Fashion,1031.29,4,5,UPI,Same Day,1,3,0.41542324732285246,Medium
+Electronics,22615.59,3,10,Credit Card,Standard,1,3,0.16683038473456935,Low
+Beauty,3333.69,3,10,Debit Card,Standard,8,3,0.360263587172864,Medium
+Electronics,25117.34,4,20,Credit Card,Standard,6,4,0.4015345142565053,Medium
+Sports,2603.18,1,0,UPI,Standard,5,2,0.34682634089735215,Medium
+Fashion,6852.73,2,20,UPI,Standard,7,3,0.7147419427305491,High
+Books,657.77,4,20,COD,Standard,3,4,0.17396391060218605,Low
+Fashion,5227.96,1,10,COD,Standard,6,4,0.3893608243001632,Medium
+Fashion,5468.29,1,0,Debit Card,Express,6,3,0.5199378395395197,Medium
+Sports,9448.35,3,10,UPI,Express,5,5,0.1429390542041713,Low
+Electronics,6313.71,3,20,Credit Card,Express,8,3,0.4293703223308145,Medium
+Sports,3877.79,1,0,COD,Same Day,5,4,0.19966493664055945,Low
+Fashion,4184.74,3,25,COD,Express,4,3,0.40377038875120735,Medium
+Home & Kitchen,8954.87,2,15,COD,Same Day,7,5,0.5239803825380299,Medium
+Beauty,302.61,4,20,Debit Card,Express,6,2,0.36147400808346897,Medium
+Fashion,908.55,1,0,UPI,Standard,1,5,0.40375962663425236,Medium
+Sports,2777.14,1,20,Credit Card,Standard,7,4,0.4864336084302728,Medium
+Fashion,5551.0,4,10,UPI,Standard,6,3,0.3705932705832251,Medium
+Fashion,1985.49,3,15,Net Banking,Standard,8,5,0.615626963765074,High
+Sports,4229.67,4,10,COD,Standard,4,4,0.2171357196559601,Low
+Electronics,15842.1,1,10,UPI,Standard,3,4,0.2888597636507189,Low
+Electronics,44093.16,3,15,COD,Express,4,5,0.3708621435967219,Medium
+Home & Kitchen,7750.14,4,10,Debit Card,Express,7,4,0.48523090887471887,Medium
+Sports,2976.95,3,10,Credit Card,Standard,7,2,0.5911065640408348,Medium
+Fashion,4169.37,2,10,COD,Standard,5,3,0.4427075852780191,Medium
+Fashion,7323.71,4,0,Credit Card,Express,3,5,0.45544388649236517,Medium
+Beauty,3216.52,1,15,Debit Card,Standard,8,5,0.42286602168249543,Medium
+Electronics,23202.4,3,15,COD,Standard,7,3,0.5387119894605301,Medium
+Fashion,5543.37,1,5,UPI,Express,4,3,0.4548147537051948,Medium
+Electronics,25078.81,4,15,UPI,Express,5,4,0.16104096154840838,Low
+Books,1127.32,3,20,COD,Standard,1,5,0.24950380822625887,Low
+Books,315.66,4,10,COD,Same Day,7,5,0.31832570465496013,Medium
+Electronics,33723.74,2,15,UPI,Express,7,3,0.32234395026131096,Medium
+Books,1493.68,1,15,UPI,Standard,3,3,0.21498301437166198,Low
+Electronics,2249.71,3,0,COD,Express,6,4,0.2073365732753327,Low
+Electronics,36647.21,2,10,Net Banking,Standard,5,5,0.26066072628207426,Low
+Beauty,499.21,4,25,COD,Express,2,4,0.29620286948219055,Low
+Electronics,2061.54,1,30,COD,Same Day,10,5,0.4408860134827617,Medium
+Books,1631.88,2,20,UPI,Express,8,3,0.24141709364983435,Low
+Home & Kitchen,8321.5,4,20,UPI,Standard,6,4,0.24065627598373157,Low
+Home & Kitchen,4619.91,3,10,Net Banking,Express,4,4,0.20037111176594202,Low
+Fashion,5634.69,3,10,COD,Express,5,1,0.5357558353049124,Medium
+Fashion,2145.16,3,15,UPI,Standard,3,3,0.3716366529364542,Medium
+Fashion,948.56,3,25,UPI,Express,5,3,0.4013273682360189,Medium
+Fashion,2393.43,1,10,UPI,Standard,7,4,0.6545823505326336,High
+Beauty,2282.92,4,15,UPI,Standard,3,3,0.26352011337345926,Low
+Books,302.34,4,5,Debit Card,Express,5,3,0.15283135986707636,Low
+Electronics,16750.72,2,0,Credit Card,Standard,4,3,0.18289883511435018,Low
+Beauty,3442.92,4,20,Credit Card,Standard,6,2,0.43169153809072397,Medium
+Books,1386.13,1,25,UPI,Standard,5,2,0.3209007629128994,Medium
+Home & Kitchen,3765.16,1,5,Credit Card,Express,5,3,0.21682500628271567,Low
+Fashion,3923.94,4,15,UPI,Express,3,3,0.44355152571979306,Medium
+Beauty,3210.32,1,0,Credit Card,Standard,7,2,0.673173143365772,High
+Electronics,5270.88,3,10,Debit Card,Standard,4,5,0.2700315434613596,Low
+Fashion,2130.35,2,10,Credit Card,Express,8,2,0.6018024314752387,High
+Electronics,22717.97,3,15,COD,Same Day,4,3,0.30482702474941303,Medium
+Home & Kitchen,8216.78,2,15,Credit Card,Standard,4,3,0.1495805587155833,Low
+Sports,9901.15,3,20,Credit Card,Same Day,7,5,0.35543659960745966,Medium
+Home & Kitchen,1138.7,3,10,COD,Standard,3,4,0.23378072462830823,Low
+Fashion,1411.2,2,25,COD,Express,4,5,0.42926148707017103,Medium
+Fashion,4650.11,4,25,Debit Card,Standard,3,3,0.5400380818659688,Medium
+Sports,9059.32,1,20,Credit Card,Same Day,9,4,0.4294263626433281,Medium
+Electronics,44403.3,2,20,COD,Express,1,4,0.2827996369828981,Low
+Sports,7998.74,3,30,Debit Card,Standard,2,4,0.2956503026539278,Low
+Beauty,616.93,4,20,COD,Standard,4,4,0.22806249798864706,Low
+Books,729.76,4,5,Debit Card,Express,4,5,0.14926546069693794,Low
+Electronics,38763.33,4,0,Debit Card,Express,3,4,0.2101157094017007,Low
+Sports,10335.53,2,15,UPI,Standard,8,5,0.27976353006496224,Low
+Electronics,43636.25,3,15,COD,Standard,5,4,0.4574330345647085,Medium
+Beauty,115.61,2,10,COD,Standard,7,4,0.35226456853381277,Medium
+Home & Kitchen,8650.61,1,10,Net Banking,Standard,5,5,0.21476398083056256,Low
+Fashion,1856.99,2,15,COD,Standard,5,4,0.3871797357801226,Medium
+Beauty,549.56,4,20,UPI,Standard,2,5,0.2856234640347749,Low
+Beauty,1530.08,1,20,Debit Card,Express,3,4,0.24336818234580387,Low
+Fashion,4571.39,4,10,COD,Express,6,4,0.3572784677076077,Medium
+Sports,8011.86,1,15,COD,Standard,4,5,0.1970195621111098,Low
+Sports,8458.94,2,20,COD,Express,5,3,0.29272757597057114,Low
+Sports,1923.88,1,0,COD,Standard,4,3,0.17361993235158155,Low
+Electronics,15795.1,2,10,Debit Card,Express,8,4,0.3847963390775718,Medium
+Fashion,7517.22,1,0,COD,Standard,6,5,0.41311087809057195,Medium
+Home & Kitchen,7675.66,3,15,COD,Express,4,4,0.29603551343230233,Low
+Electronics,34534.18,3,10,Net Banking,Standard,7,4,0.37576658024946463,Medium
+Electronics,25747.54,2,30,UPI,Standard,7,2,0.7305656242385067,High
+Beauty,3184.37,4,15,COD,Standard,4,4,0.32554527382062376,Medium
+Beauty,1046.43,1,5,Debit Card,Express,8,5,0.2935215173264258,Low
+Electronics,15250.14,2,0,Debit Card,Standard,4,4,0.1841032205855101,Low
+Fashion,3151.35,4,5,UPI,Standard,2,3,0.49553643279003695,Medium
+Fashion,4072.65,2,20,UPI,Standard,6,4,0.37451106227603437,Medium
+Home & Kitchen,7168.55,3,20,COD,Express,2,3,0.2219773371331248,Low
+Home & Kitchen,11657.39,3,10,COD,Standard,6,4,0.32915945865267066,Medium
+Sports,7075.24,3,30,COD,Standard,4,5,0.32923861537233423,Medium
+Books,753.32,1,30,COD,Same Day,3,5,0.2470075494607335,Low
+Fashion,7534.87,4,20,Debit Card,Standard,4,3,0.4609896263111727,Medium
+Fashion,4535.85,3,25,Credit Card,Standard,4,4,0.6338458655456767,High
+Home & Kitchen,1238.67,1,10,COD,Standard,3,4,0.23452456413596093,Low
+Fashion,1241.09,2,25,Credit Card,Standard,5,4,0.6039231053379991,High
+Fashion,4830.85,3,15,UPI,Standard,5,4,0.46704850734959524,Medium
+Electronics,24379.37,4,10,COD,Standard,6,3,0.245556933356331,Low
+Electronics,24235.74,4,5,Credit Card,Standard,1,5,0.21120770876104172,Low
+Books,325.05,2,5,Debit Card,Standard,7,5,0.35069794823388784,Medium
+Home & Kitchen,9539.35,1,20,COD,Express,6,3,0.3146441804185703,Medium
+Fashion,5504.06,1,10,Net Banking,Standard,2,3,0.4916916334653856,Medium
+Sports,6740.52,4,20,UPI,Express,8,3,0.5352876451657281,Medium
+Books,327.76,3,15,Credit Card,Express,5,5,0.19813573239808588,Low
+Books,1298.91,2,5,UPI,Same Day,6,2,0.2766515516446292,Low
+Home & Kitchen,7557.53,2,25,UPI,Same Day,7,2,0.6410944844709123,High
+Sports,2100.01,3,25,COD,Standard,6,4,0.31499599755008034,Medium
+Electronics,14879.21,3,15,UPI,Standard,6,4,0.25036786479931455,Low
+Beauty,3715.1,1,20,COD,Standard,6,4,0.4035233574580362,Medium
+Beauty,2399.54,1,10,UPI,Standard,2,5,0.1909097095003259,Low
+Books,311.56,3,25,UPI,Express,8,5,0.30238269153778236,Medium
+Electronics,15980.24,3,20,COD,Standard,3,5,0.4758717000562665,Medium
+Home & Kitchen,11455.17,2,20,UPI,Same Day,7,4,0.3085036836947157,Medium
+Books,1705.0,3,0,COD,Same Day,3,3,0.2507452975393433,Low
+Electronics,2115.6,1,0,Credit Card,Express,4,4,0.3117008961661369,Medium
+Books,152.84,1,10,Debit Card,Standard,8,4,0.31984629480041293,Medium
+Fashion,2365.28,2,0,Credit Card,Standard,2,4,0.3763634329914899,Medium
+Beauty,1448.82,3,15,COD,Standard,6,4,0.22970357595292132,Low
+Books,819.25,1,15,COD,Standard,4,4,0.2605169033537703,Low
+Home & Kitchen,4287.76,3,25,Debit Card,Standard,8,4,0.5049818444704853,Medium
+Home & Kitchen,1165.09,1,5,UPI,Standard,5,3,0.18211427742343478,Low
+Electronics,12721.84,3,30,COD,Standard,9,4,0.5989140286675487,Medium
+Books,1551.21,2,15,COD,Standard,7,4,0.49200215178261225,Medium
+Beauty,1318.31,1,10,Credit Card,Express,8,5,0.32745977735156073,Medium
+Beauty,2400.58,1,15,Credit Card,Express,4,4,0.2562184451197641,Low
+Electronics,23875.1,3,10,UPI,Standard,3,4,0.2661871429237733,Low
+Home & Kitchen,5077.22,3,20,Credit Card,Express,10,2,0.7687023726659588,High
+Fashion,755.9,4,10,UPI,Standard,4,4,0.35200039191809795,Medium
+Sports,3693.19,2,20,UPI,Same Day,6,3,0.21613722285661807,Low
+Fashion,2449.13,4,10,Debit Card,Express,1,4,0.36902427971185164,Medium
+Electronics,20652.72,2,5,Net Banking,Standard,3,4,0.22584638788310563,Low
+Books,704.12,4,10,COD,Standard,7,4,0.3328456167871918,Medium
+Home & Kitchen,17011.38,2,25,Credit Card,Same Day,2,3,0.17163914328877022,Low
+Sports,5774.64,2,20,Net Banking,Express,7,5,0.5187801640986379,Medium
+Electronics,32075.35,3,20,UPI,Express,5,2,0.3530256785567878,Medium
+Books,806.65,2,10,Debit Card,Standard,8,4,0.13610690675182469,Low
+Electronics,42197.17,4,10,UPI,Express,1,3,0.1438293529329836,Low
+Fashion,5318.29,4,10,COD,Same Day,4,4,0.4099245364337756,Medium
+Electronics,21214.75,3,15,Credit Card,Standard,5,5,0.38893036951493265,Medium
+Electronics,30545.1,4,15,UPI,Standard,3,4,0.21143511157071704,Low
+Beauty,1108.5,3,15,Debit Card,Standard,5,4,0.2150779899532708,Low
+Fashion,1082.09,1,20,COD,Standard,4,4,0.4641418103940165,Medium
+Beauty,3236.68,1,20,UPI,Standard,2,4,0.3162514871870226,Medium
+Fashion,6184.48,1,5,Debit Card,Standard,7,4,0.6153278156488579,High
+Fashion,7981.98,3,15,UPI,Standard,9,4,0.6374185317630864,High
+Home & Kitchen,4372.83,2,0,COD,Express,4,3,0.24010426146670988,Low
+Fashion,3970.62,2,20,COD,Same Day,8,4,0.7357048896843559,High
+Home & Kitchen,6322.57,1,15,UPI,Standard,5,4,0.21986460398710306,Low
+Sports,7137.11,4,10,Net Banking,Standard,3,3,0.16909480760455098,Low
+Home & Kitchen,1095.87,2,15,Debit Card,Express,5,4,0.269673452875265,Low
+Sports,9723.22,4,15,Debit Card,Standard,3,4,0.23629418284596354,Low
+Home & Kitchen,2881.23,4,0,Debit Card,Standard,6,5,0.3093533577601079,Medium
+Electronics,13015.45,2,30,UPI,Standard,5,3,0.2738770129484709,Low
+Books,1002.29,3,0,Credit Card,Standard,1,4,0.2675549498642297,Low
+Fashion,1096.85,2,20,Net Banking,Same Day,2,3,0.30972029614175595,Medium
+Fashion,1298.43,1,5,Debit Card,Standard,3,4,0.5213346600965937,Medium
+Beauty,1988.43,3,15,UPI,Standard,4,5,0.19626030611435458,Low
+Fashion,5430.44,3,15,COD,Standard,9,4,0.7663953229769965,High
+Beauty,2956.04,2,30,Debit Card,Express,4,5,0.39359943999828767,Medium
+Sports,523.31,4,10,UPI,Standard,7,4,0.33120347765899577,Medium
+Electronics,29549.03,1,20,UPI,Standard,5,4,0.27645261683489253,Low
+Beauty,452.4,3,0,UPI,Standard,10,3,0.31667636224888035,Medium
+Home & Kitchen,17325.38,4,15,Credit Card,Express,3,5,0.23212878230154457,Low
+Home & Kitchen,1559.69,3,25,COD,Standard,7,2,0.7655275553016079,High
+Beauty,2648.28,3,10,COD,Standard,3,4,0.31984163750325884,Medium
+Home & Kitchen,3016.81,1,0,COD,Express,7,4,0.518165474593493,Medium
+Books,278.94,4,25,COD,Standard,2,3,0.18942960624574476,Low
+Fashion,3205.13,3,25,COD,Standard,2,4,0.6787728163133375,High
+Fashion,5492.05,4,10,COD,Express,7,4,0.7529034128473366,High
+Fashion,7268.53,3,10,COD,Standard,4,3,0.4091892278273589,Medium
+Fashion,7343.4,1,10,COD,Same Day,8,4,0.7379132892863245,High
+Fashion,3318.75,2,20,UPI,Standard,1,5,0.48540851854476313,Medium
+Fashion,3726.63,3,15,UPI,Standard,6,3,0.3835158493178047,Medium
+Sports,3528.37,2,15,Debit Card,Standard,1,4,0.22330122804454572,Low
+Electronics,40472.14,3,5,UPI,Same Day,4,4,0.22016620429163467,Low
+Books,1671.85,3,20,UPI,Standard,4,5,0.22051832849548278,Low
+Electronics,44599.51,4,10,Debit Card,Standard,9,3,0.4287423962833024,Medium
+Fashion,3039.48,2,0,COD,Standard,3,4,0.4784722743372413,Medium
+Electronics,16992.96,4,10,COD,Express,3,3,0.19560779858797928,Low
+Fashion,4865.47,2,30,COD,Express,7,4,0.7427447626476437,High
+Books,1328.21,3,20,Credit Card,Standard,5,5,0.24651528285137692,Low
+Electronics,5139.13,2,0,UPI,Express,6,4,0.172095489606419,Low
+Electronics,12902.6,2,5,UPI,Standard,3,4,0.1906856552070161,Low
+Fashion,4906.24,2,20,Debit Card,Same Day,9,4,0.6288114620311221,High
+Fashion,7086.1,1,20,COD,Express,4,4,0.5461272380671846,Medium
+Home & Kitchen,5913.04,1,15,Credit Card,Standard,6,5,0.2916438195212853,Low
+Electronics,34660.92,1,25,COD,Standard,1,5,0.3499552470399468,Medium
+Beauty,2487.67,1,15,Debit Card,Standard,3,3,0.27268860439633064,Low
+Home & Kitchen,3492.06,3,10,UPI,Same Day,6,3,0.2095778139996814,Low
+Beauty,1480.05,4,20,UPI,Standard,2,3,0.2585112122558681,Low
+Electronics,22556.6,2,10,Net Banking,Standard,1,4,0.1690839687931549,Low
+Fashion,1420.2,1,20,COD,Standard,9,4,0.6788806018737926,High
+Electronics,13915.04,2,20,Debit Card,Standard,2,3,0.17754484946502452,Low
+Beauty,914.03,4,20,UPI,Express,1,3,0.22485166528645326,Low
+Electronics,11652.09,2,20,UPI,Standard,3,3,0.21041981955398464,Low
+Books,1621.78,2,15,UPI,Express,5,2,0.4688245188016998,Medium
+Beauty,943.92,4,15,Credit Card,Express,3,4,0.31665920765305117,Medium
+Fashion,5365.91,1,10,COD,Standard,4,4,0.4808472889998733,Medium
+Electronics,6509.76,2,5,Credit Card,Standard,7,3,0.33578026773364394,Medium
+Books,329.88,4,0,COD,Standard,4,4,0.21574227276235938,Low
+Electronics,27430.37,3,10,UPI,Express,4,3,0.10061520083169248,Low
+Home & Kitchen,14582.54,2,30,COD,Standard,6,3,0.37413211332218893,Medium
+Beauty,1678.52,3,10,Net Banking,Standard,8,5,0.2574443196824646,Low
+Beauty,722.02,4,15,Credit Card,Standard,2,5,0.22703091783091406,Low
+Beauty,117.16,2,30,Net Banking,Standard,5,3,0.3965291862141726,Medium
+Fashion,7654.21,4,30,COD,Standard,5,4,0.5384106145761764,Medium
+Fashion,4282.75,2,20,UPI,Standard,5,4,0.4594228117077284,Medium
+Beauty,2166.22,2,20,COD,Standard,6,4,0.31136249760869544,Medium
+Electronics,31833.29,1,0,COD,Express,6,4,0.14053077142408948,Low
+Home & Kitchen,16164.25,4,15,Debit Card,Standard,6,3,0.22537777482507138,Low
+Home & Kitchen,16357.39,3,15,Credit Card,Standard,5,2,0.46591903566961806,Medium
+Electronics,13535.65,3,0,Net Banking,Standard,8,5,0.34585520173726747,Medium
+Beauty,2669.5,3,15,UPI,Standard,4,4,0.2625116063254512,Low
+Home & Kitchen,16958.77,2,30,Net Banking,Standard,6,2,0.38762901672057615,Medium
+Electronics,27318.57,1,0,COD,Same Day,1,4,0.20745464288436263,Low
+Home & Kitchen,9129.27,1,10,COD,Express,5,4,0.3428705057301685,Medium
+Fashion,1445.39,4,0,Debit Card,Standard,3,4,0.4596602473352481,Medium
+Home & Kitchen,15992.08,4,10,Debit Card,Express,1,5,0.1692340628920038,Low
+Home & Kitchen,9707.63,2,20,Credit Card,Standard,7,5,0.40922056485319136,Medium
+Sports,6330.69,1,10,UPI,Standard,5,3,0.18281873984252248,Low
+Home & Kitchen,12122.25,1,20,Debit Card,Same Day,6,2,0.4228634320522121,Medium
+Beauty,2749.99,4,20,Net Banking,Standard,4,3,0.24577512031812762,Low
+Fashion,4788.43,2,15,COD,Standard,8,4,0.789708830820445,High
+Home & Kitchen,12160.65,4,25,COD,Standard,6,4,0.2741992866349715,Low
+Electronics,35137.04,2,0,UPI,Standard,7,5,0.32555634725983207,Medium
+Home & Kitchen,3137.98,4,20,Debit Card,Standard,10,3,0.5619695175669224,Medium
+Fashion,1919.02,3,10,UPI,Standard,3,5,0.35595118444325835,Medium
+Beauty,823.54,3,25,Debit Card,Express,2,4,0.303240231519311,Medium
+Books,1443.05,2,15,COD,Express,2,4,0.3029639469882434,Medium
+Fashion,373.35,1,10,UPI,Express,4,4,0.2007142245345794,Low
+Home & Kitchen,7379.14,1,25,Net Banking,Standard,6,4,0.26418066604171464,Low
+Electronics,12542.18,4,20,Credit Card,Standard,3,4,0.355555816196529,Medium
+Sports,8810.98,4,5,Debit Card,Standard,3,3,0.09950620358939448,Low
+Fashion,6502.97,2,10,Net Banking,Standard,1,5,0.40625143289430293,Medium
+Beauty,2217.47,2,25,Credit Card,Express,4,4,0.4328523649143348,Medium
+Home & Kitchen,4676.44,2,20,UPI,Standard,6,4,0.23978316288782422,Low
+Books,150.37,4,30,Debit Card,Standard,3,3,0.23732619843174851,Low
+Electronics,25171.67,2,0,UPI,Standard,4,4,0.1689120362359154,Low
+Electronics,6685.73,4,15,UPI,Standard,3,3,0.24219949115789705,Low
+Home & Kitchen,15573.8,2,5,COD,Standard,5,4,0.3641689514290162,Medium
+Books,1777.81,3,25,Credit Card,Standard,4,4,0.2837680668186956,Low
+Fashion,6113.0,2,5,Debit Card,Standard,4,3,0.4803485897469531,Medium
+Home & Kitchen,6754.81,4,25,UPI,Express,3,4,0.26312715673486375,Low
+Fashion,7742.42,4,5,COD,Express,6,4,0.49139512768208776,Medium
