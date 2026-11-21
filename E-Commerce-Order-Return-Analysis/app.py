@@ -1,9 +1,12 @@
 """
 E-Commerce Order Return Analysis Dashboard
 Organisation: NorthStar Online Retail Pvt. Ltd. (Noida, Uttar Pradesh)
-Author: Abhishek Sharma (Roll No: 2503201450007)
+Project ID: P088
+Author: Abhishek Sharma
+University Roll No: 2500320140007
+Batch ID: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
 Programme: MCA 2nd Year – Data Analytics, ABES Engineering College, Ghaziabad
-Mentor: Dinesh Sereno
+Project Mentor: Dinesh Sereno
 """
 
 import os
@@ -21,106 +24,153 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Add current directory to path
+# Add current directory, parent directory, and working directory to path for Streamlit Cloud compatibility
 current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.append(current_dir)
+parent_dir = os.path.dirname(current_dir)
+for p in [current_dir, parent_dir, os.path.join(current_dir, "src"), os.path.join(parent_dir, "src")]:
+    if p and os.path.exists(p) and p not in sys.path:
+        sys.path.insert(0, p)
 
-from src.analytics import (
-    prepare_dataframe,
-    apply_filters,
-    calculate_core_kpis,
-    get_monthly_trends,
-    get_category_metrics,
-    get_return_reasons_breakdown,
-    get_payment_method_metrics,
-    get_delivery_delay_analysis,
-    get_product_level_analysis,
-    get_region_metrics
-)
-from src.charts import (
-    plot_monthly_trend,
-    plot_category_performance,
-    plot_return_reasons_breakdown,
-    plot_payment_methods,
-    plot_delivery_delay_comparison,
-    plot_product_risk_matrix,
-    plot_refund_value_by_category
-)
-from src.db_manager import DatabaseManager
-from data.database import init_database
+try:
+    from src.analytics import (
+        prepare_dataframe,
+        apply_filters,
+        calculate_core_kpis,
+        get_monthly_trends,
+        get_category_metrics,
+        get_return_reasons_breakdown,
+        get_payment_method_metrics,
+        get_delivery_delay_analysis,
+        get_product_level_analysis,
+        get_region_metrics
+    )
+    from src.charts import (
+        plot_monthly_trend,
+        plot_category_performance,
+        plot_return_reasons_breakdown,
+        plot_payment_methods,
+        plot_delivery_delay_comparison,
+        plot_product_risk_matrix,
+        plot_refund_value_by_category
+    )
+    from src.db_manager import DatabaseManager
+except ModuleNotFoundError:
+    from analytics import (
+        prepare_dataframe,
+        apply_filters,
+        calculate_core_kpis,
+        get_monthly_trends,
+        get_category_metrics,
+        get_return_reasons_breakdown,
+        get_payment_method_metrics,
+        get_delivery_delay_analysis,
+        get_product_level_analysis,
+        get_region_metrics
+    )
+    from charts import (
+        plot_monthly_trend,
+        plot_category_performance,
+        plot_return_reasons_breakdown,
+        plot_payment_methods,
+        plot_delivery_delay_comparison,
+        plot_product_risk_matrix,
+        plot_refund_value_by_category
+    )
+    from db_manager import DatabaseManager
 
-# Custom Styling
+try:
+    from data.database import init_database
+except ModuleNotFoundError:
+    try:
+        from database import init_database
+    except ModuleNotFoundError:
+        pass
+
+# Custom Responsive Styling (Zero Overlapping Text)
 st.markdown("""
 <style>
     .main-header {
         background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #2563EB 100%);
-        padding: 24px;
+        padding: 24px 28px;
         border-radius: 12px;
         color: white;
         margin-bottom: 24px;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
     }
     .main-header h1 {
         margin: 0;
-        font-size: 2.1rem;
+        font-size: 2.0rem;
         font-weight: 700;
         color: #F8FAFC;
+        line-height: 1.3;
+        word-wrap: break-word;
     }
     .main-header p {
-        margin: 6px 0 0 0;
-        font-size: 0.95rem;
+        margin: 8px 0 12px 0;
+        font-size: 1.0rem;
         color: #CBD5E1;
+        line-height: 1.4;
     }
     .meta-badge {
         display: inline-block;
-        background: rgba(255, 255, 255, 0.15);
-        padding: 4px 10px;
+        background: rgba(255, 255, 255, 0.18);
+        padding: 5px 12px;
         border-radius: 6px;
-        font-size: 0.8rem;
+        font-size: 0.82rem;
         margin-right: 8px;
-        margin-top: 8px;
+        margin-top: 6px;
+        margin-bottom: 4px;
+        white-space: nowrap;
+        line-height: 1.4;
     }
     .kpi-card {
         background: #FFFFFF;
-        padding: 16px 20px;
-        border-radius: 10px;
+        padding: 18px 22px;
+        border-radius: 12px;
         border: 1px solid #E2E8F0;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.04);
         text-align: left;
+        margin-bottom: 14px;
+        min-height: 115px;
+        box-sizing: border-box;
     }
     .kpi-title {
         color: #64748B;
-        font-size: 0.82rem;
+        font-size: 0.85rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.05em;
+        line-height: 1.3;
+        margin-bottom: 6px;
     }
     .kpi-value {
         color: #0F172A;
-        font-size: 1.7rem;
+        font-size: 1.85rem;
         font-weight: 700;
-        margin-top: 4px;
+        line-height: 1.2;
+        word-break: break-word;
     }
     .kpi-subtitle {
         color: #64748B;
-        font-size: 0.78rem;
-        margin-top: 4px;
+        font-size: 0.82rem;
+        margin-top: 6px;
+        line-height: 1.3;
     }
     .kpi-bad { color: #DC2626 !important; }
     .kpi-good { color: #16A34A !important; }
     .kpi-warn { color: #D97706 !important; }
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
+        gap: 6px;
     }
     .stTabs [data-baseweb="tab"] {
-        height: 48px;
-        white-space: pre-wrap;
+        height: 46px;
         background-color: #F8FAFC;
         border-radius: 8px 8px 0px 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 16px;
         font-weight: 600;
+        font-size: 0.92rem;
+        white-space: nowrap;
     }
     .stTabs [aria-selected="true"] {
         background-color: #E2E8F0 !important;
@@ -132,8 +182,13 @@ st.markdown("""
 @st.cache_resource
 def load_and_initialize_data():
     """Initializes SQLite and returns cached DataFrame."""
-    db_path = os.path.join(current_dir, "data", "ecommerce_returns.db")
-    csv_path = os.path.join(current_dir, "data", "orders_returns.csv")
+    # Robust data directory resolution (works in root or nested directory)
+    data_dir = os.path.join(current_dir, "data")
+    if not os.path.exists(data_dir) and os.path.exists(os.path.join(parent_dir, "data")):
+        data_dir = os.path.join(parent_dir, "data")
+
+    db_path = os.path.join(data_dir, "ecommerce_returns.db")
+    csv_path = os.path.join(data_dir, "orders_returns.csv")
 
     if not os.path.exists(db_path) or not os.path.exists(csv_path):
         init_database(db_path=db_path, csv_path=csv_path)
@@ -149,10 +204,12 @@ st.markdown("""
     <h1>📦 NorthStar Retail — E-Commerce Order Return Analytics</h1>
     <p>Operational decision-support dashboard measuring return velocity, root causes, financial leakage, and delivery delays.</p>
     <div>
+        <span class="meta-badge"><b>Project ID:</b> P088</span>
         <span class="meta-badge"><b>Student:</b> Abhishek Sharma</span>
-        <span class="meta-badge"><b>Roll No:</b> 2503201450007</span>
+        <span class="meta-badge"><b>University Roll No:</b> 2500320140007</span>
+        <span class="meta-badge"><b>Batch ID:</b> ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01</span>
         <span class="meta-badge"><b>Course:</b> MCA 2nd Year (Data Analytics)</span>
-        <span class="meta-badge"><b>Mentor:</b> Dinesh Sereno</span>
+        <span class="meta-badge"><b>Project Mentor:</b> Dinesh Sereno</span>
         <span class="meta-badge"><b>Institution:</b> ABES Engineering College, Ghaziabad</span>
     </div>
 </div>
@@ -236,63 +293,68 @@ st.sidebar.markdown("---")
 st.sidebar.markdown(f"**Filtered Orders:** `{len(df_filtered):,}` / `{len(df_raw):,}`")
 st.sidebar.caption("⚡ Powered by SQLite, Pandas, Plotly & Streamlit")
 
-# ================= TOP KPI SUMMARY CARDS =================
+# ================= TOP KPI SUMMARY CARDS (2 Rows x 3 Columns) =================
+# Avoids cramped 6-column layout to prevent any text overlapping
 kpis = calculate_core_kpis(df_filtered)
 
-c1, c2, c3, c4, c5, c6 = st.columns(6)
+# Row 1: Volume & Return Rates
+r1_c1, r1_c2, r1_c3 = st.columns(3)
 
-with c1:
+with r1_c1:
     st.markdown(f"""
     <div class="kpi-card">
         <div class="kpi-title">Total Orders (OQ-01)</div>
         <div class="kpi-value">{kpis['total_orders']:,}</div>
-        <div class="kpi-subtitle">Distinct order records</div>
+        <div class="kpi-subtitle">Distinct order records in period</div>
     </div>
     """, unsafe_allow_html=True)
 
-with c2:
+with r1_c2:
     st.markdown(f"""
     <div class="kpi-card">
         <div class="kpi-title">Returned Orders (OQ-02)</div>
         <div class="kpi-value kpi-bad">{kpis['returned_orders']:,}</div>
-        <div class="kpi-subtitle">Customer returns filed</div>
+        <div class="kpi-subtitle">Customer return requests filed</div>
     </div>
     """, unsafe_allow_html=True)
 
-with c3:
+with r1_c3:
     rate_class = "kpi-bad" if kpis['return_rate_pct'] > 20 else "kpi-good"
     st.markdown(f"""
     <div class="kpi-card">
         <div class="kpi-title">Return Rate (OQ-02)</div>
         <div class="kpi-value {rate_class}">{kpis['return_rate_pct']:.2f}%</div>
-        <div class="kpi-subtitle">Benchmark: &lt; 18.0%</div>
+        <div class="kpi-subtitle">Benchmark Target: &lt; 18.0%</div>
     </div>
     """, unsafe_allow_html=True)
 
-with c4:
+# Row 2: Financial Outflow & Logistics Delays
+r2_c1, r2_c2, r2_c3 = st.columns(3)
+
+with r2_c1:
     st.markdown(f"""
     <div class="kpi-card">
-        <div class="kpi-title">Total Refund (OQ-07)</div>
+        <div class="kpi-title">Total Refund Outflow (OQ-07)</div>
         <div class="kpi-value kpi-bad">₹{kpis['total_refund']:,.0f}</div>
-        <div class="kpi-subtitle">Gross refund outflow</div>
+        <div class="kpi-subtitle">Gross refund loss from returns</div>
     </div>
     """, unsafe_allow_html=True)
 
-with c5:
+with r2_c2:
     st.markdown(f"""
     <div class="kpi-card">
-        <div class="kpi-title">Net Revenue</div>
+        <div class="kpi-title">Net Retained Sales</div>
         <div class="kpi-value kpi-good">₹{kpis['net_revenue']:,.0f}</div>
-        <div class="kpi-subtitle">Gross: ₹{kpis['total_revenue']:,.0f}</div>
+        <div class="kpi-subtitle">Gross Revenue: ₹{kpis['total_revenue']:,.0f}</div>
     </div>
     """, unsafe_allow_html=True)
 
-with c6:
+with r2_c3:
     st.markdown(f"""
     <div class="kpi-card">
-        <div class="kpi-title">Avg Delay (Returned)</div>
-        <div class="kpi-value kpi-warn">{kpis['avg_delivery_delay_returned']:+.1f} d</div>
-        <div class="kpi-subtitle">Non-returned: {kpis['avg_delivery_delay_non_returned']:+.1f} d</div>
+        <div class="kpi-title">Fulfillment Delay Gap (OQ-09)</div>
+        <div class="kpi-value kpi-warn">{kpis['avg_delivery_delay_returned']:+.1f} days</div>
+        <div class="kpi-subtitle">Non-returned orders: {kpis['avg_delivery_delay_non_returned']:+.1f} days</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -300,12 +362,12 @@ st.write("")
 
 # ================= TAB NAVIGATION =================
 tabs = st.tabs([
-    "📈 1. Trends & Macro KPIs",
-    "🏷️ 2. Categories & Reasons",
-    "🚚 3. Delivery Delays & Payments",
-    "🎯 4. Product Risk Review",
-    "🗃️ 5. SQL & Data Explorer",
-    "📑 6. Academic Traceability"
+    "📈 Trends & Macro KPIs",
+    "🏷️ Categories & Reasons",
+    "🚚 Fulfillment & Payments",
+    "🎯 Product Risk Review",
+    "🗃️ SQL & Data Explorer",
+    "📑 Academic Traceability"
 ])
 
 # ----------------- TAB 1: Trends & Macro KPIs -----------------
@@ -403,10 +465,10 @@ with tabs[2]:
     with c_d1:
         st.markdown(f"""
         <div class="kpi-card">
-            <div class="kpi-title">Fulfillment Delay Comparison</div>
-            <p><b>Returned Orders Avg Delay:</b> <span class="kpi-bad">{delay_stats['avg_delay_returned']:+.2f} days</span></p>
-            <p><b>Non-Returned Orders Avg Delay:</b> <span class="kpi-good">{delay_stats['avg_delay_non_returned']:+.2f} days</span></p>
-            <p class="kpi-subtitle">Difference: {delay_stats['avg_delay_returned'] - delay_stats['avg_delay_non_returned']:+.2f} days</p>
+            <div class="kpi-title">Fulfillment Delay Comparison (OQ-09)</div>
+            <p style="margin: 8px 0 4px 0; font-size: 1rem;"><b>Returned Orders Avg Delay:</b> <span class="kpi-bad" style="font-weight:700;">{delay_stats['avg_delay_returned']:+.2f} days</span></p>
+            <p style="margin: 4px 0 8px 0; font-size: 1rem;"><b>Non-Returned Orders Avg Delay:</b> <span class="kpi-good" style="font-weight:700;">{delay_stats['avg_delay_non_returned']:+.2f} days</span></p>
+            <div class="kpi-subtitle">Difference: <b>{delay_stats['avg_delay_returned'] - delay_stats['avg_delay_non_returned']:+.2f} days longer</b></div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -535,16 +597,16 @@ with tabs[5]:
         {"OQ ID": "OQ-09", "Operational Question": "Do delivery delays appear more frequently among returned orders?", "Dataset Fields": "expected_delivery_date, actual_delivery_date, delay_days", "Calculation": "actual_date - expected_date; comparison", "Status": "Implemented (Tab 3 Delay Box/Bar)"},
         {"OQ ID": "OQ-10", "Operational Question": "Which products show unusually high return rates and should be reviewed?", "Dataset Fields": "product_id, product_name, return_status", "Calculation": "Product rate with min order threshold", "Status": "Implemented (Tab 4 Scatter Matrix)"}
     ]
-    st.table(pd.DataFrame(traceability_data))
+    st.dataframe(pd.DataFrame(traceability_data), use_container_width=True)
 
     st.markdown("### Stakeholders & Decision Support Mapping")
     stakeholders = [
         {"SH ID": "SH-01", "Stakeholder": "Operations / E-commerce Manager", "App View": "KPI Cards & Tab 1 Trends", "Primary Decision": "Prioritize operational interventions and weekly performance targets"},
-        {"SH-02": "SH-02", "Stakeholder": "Business / Data Analyst", "App View": "Tab 5 SQL Console & Filters", "Primary Decision": "Slice cohorts, evaluate correlations and prepare deep-dive reports"},
-        {"SH-03": "SH-03", "Stakeholder": "Customer Support Lead", "App View": "Tab 2 Return Reasons Donut", "Primary Decision": "Refine customer feedback loops and return authorization rules"},
-        {"SH-04": "SH-04", "Stakeholder": "Product / Category Manager", "App View": "Tab 4 Product Risk Matrix", "Primary Decision": "Audit vendor quality, update sizing guides, or delist high-return SKUs"},
-        {"SH-05": "SH-05", "Stakeholder": "Warehouse / Fulfilment Lead", "App View": "Tab 3 Delivery Delay Analysis", "Primary Decision": "Address logistics courier bottlenecks and packaging damage rates"},
-        {"SH-06": "SH-06", "Stakeholder": "Student Developer (Abhishek Sharma)", "App View": "Entire Prototype & Pytest Suite", "Primary Decision": "Ensure academic rigor, clean architecture, and test coverage"},
-        {"SH-07": "SH-07", "Stakeholder": "Mentor (Dinesh Sereno)", "App View": "Academic Traceability & Report", "Primary Decision": "Verify academic excellence and project requirement fulfillment"}
+        {"SH ID": "SH-02", "Stakeholder": "Business / Data Analyst", "App View": "Tab 5 SQL Console & Filters", "Primary Decision": "Slice cohorts, evaluate correlations and prepare deep-dive reports"},
+        {"SH ID": "SH-03", "Stakeholder": "Customer Support Lead", "App View": "Tab 2 Return Reasons Donut", "Primary Decision": "Refine customer feedback loops and return authorization rules"},
+        {"SH ID": "SH-04", "Stakeholder": "Product / Category Manager", "App View": "Tab 4 Product Risk Matrix", "Primary Decision": "Audit vendor quality, update sizing guides, or delist high-return SKUs"},
+        {"SH ID": "SH-05", "Stakeholder": "Warehouse / Fulfilment Lead", "App View": "Tab 3 Delivery Delay Analysis", "Primary Decision": "Address logistics courier bottlenecks and packaging damage rates"},
+        {"SH ID": "SH-06", "Stakeholder": "Student Developer (Abhishek Sharma - Roll: 2500320140007, Batch: Batch 01)", "App View": "Entire Prototype & Pytest Suite", "Primary Decision": "Ensure academic rigor, clean architecture, and test coverage"},
+        {"SH ID": "SH-07", "Stakeholder": "Project Mentor (Dinesh Sereno)", "App View": "Academic Traceability & Report", "Primary Decision": "Verify academic excellence and project requirement fulfillment"}
     ]
-    st.table(pd.DataFrame(stakeholders))
+    st.dataframe(pd.DataFrame(stakeholders), use_container_width=True)

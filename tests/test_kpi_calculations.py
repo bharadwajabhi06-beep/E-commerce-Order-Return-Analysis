@@ -1,7 +1,10 @@
 """
 Test Suite: KPI Calculation Accuracy (SC-02, SC-03, OBJ-02)
 Uses hand-calculated synthetic sample to verify 100% calculation accuracy.
-Author: Abhishek Sharma (Roll No: 2503201450007)
+Project ID: P088
+Author: Abhishek Sharma (University Roll No: 2500320140007)
+Batch ID: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
+Project Mentor: Dinesh Sereno
 NorthStar Online Retail Pvt. Ltd.
 """
 

@@ -1,9 +1,12 @@
 """
 E-Commerce Order Return Analysis Dashboard
 Organisation: NorthStar Online Retail Pvt. Ltd. (Noida, Uttar Pradesh)
-Author: Abhishek Sharma (Roll No: 2503201450007)
+Project ID: P088
+Author: Abhishek Sharma
+University Roll No: 2500320140007
+Batch ID: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
 Programme: MCA 2nd Year – Data Analytics, ABES Engineering College, Ghaziabad
-Mentor: Dinesh Sereno
+Project Mentor: Dinesh Sereno
 """
 
 import os
@@ -21,34 +24,67 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Add current directory to path
+# Add current directory, parent directory, and working directory to path for Streamlit Cloud compatibility
 current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.append(current_dir)
+parent_dir = os.path.dirname(current_dir)
+for p in [current_dir, parent_dir, os.path.join(current_dir, "src"), os.path.join(parent_dir, "src")]:
+    if p and os.path.exists(p) and p not in sys.path:
+        sys.path.insert(0, p)
 
-from src.analytics import (
-    prepare_dataframe,
-    apply_filters,
-    calculate_core_kpis,
-    get_monthly_trends,
-    get_category_metrics,
-    get_return_reasons_breakdown,
-    get_payment_method_metrics,
-    get_delivery_delay_analysis,
-    get_product_level_analysis,
-    get_region_metrics
-)
-from src.charts import (
-    plot_monthly_trend,
-    plot_category_performance,
-    plot_return_reasons_breakdown,
-    plot_payment_methods,
-    plot_delivery_delay_comparison,
-    plot_product_risk_matrix,
-    plot_refund_value_by_category
-)
-from src.db_manager import DatabaseManager
-from data.database import init_database
+try:
+    from src.analytics import (
+        prepare_dataframe,
+        apply_filters,
+        calculate_core_kpis,
+        get_monthly_trends,
+        get_category_metrics,
+        get_return_reasons_breakdown,
+        get_payment_method_metrics,
+        get_delivery_delay_analysis,
+        get_product_level_analysis,
+        get_region_metrics
+    )
+    from src.charts import (
+        plot_monthly_trend,
+        plot_category_performance,
+        plot_return_reasons_breakdown,
+        plot_payment_methods,
+        plot_delivery_delay_comparison,
+        plot_product_risk_matrix,
+        plot_refund_value_by_category
+    )
+    from src.db_manager import DatabaseManager
+except ModuleNotFoundError:
+    from analytics import (
+        prepare_dataframe,
+        apply_filters,
+        calculate_core_kpis,
+        get_monthly_trends,
+        get_category_metrics,
+        get_return_reasons_breakdown,
+        get_payment_method_metrics,
+        get_delivery_delay_analysis,
+        get_product_level_analysis,
+        get_region_metrics
+    )
+    from charts import (
+        plot_monthly_trend,
+        plot_category_performance,
+        plot_return_reasons_breakdown,
+        plot_payment_methods,
+        plot_delivery_delay_comparison,
+        plot_product_risk_matrix,
+        plot_refund_value_by_category
+    )
+    from db_manager import DatabaseManager
+
+try:
+    from data.database import init_database
+except ModuleNotFoundError:
+    try:
+        from database import init_database
+    except ModuleNotFoundError:
+        pass
 
 # Custom Responsive Styling (Zero Overlapping Text)
 st.markdown("""
@@ -146,8 +182,13 @@ st.markdown("""
 @st.cache_resource
 def load_and_initialize_data():
     """Initializes SQLite and returns cached DataFrame."""
-    db_path = os.path.join(current_dir, "data", "ecommerce_returns.db")
-    csv_path = os.path.join(current_dir, "data", "orders_returns.csv")
+    # Robust data directory resolution (works in root or nested directory)
+    data_dir = os.path.join(current_dir, "data")
+    if not os.path.exists(data_dir) and os.path.exists(os.path.join(parent_dir, "data")):
+        data_dir = os.path.join(parent_dir, "data")
+
+    db_path = os.path.join(data_dir, "ecommerce_returns.db")
+    csv_path = os.path.join(data_dir, "orders_returns.csv")
 
     if not os.path.exists(db_path) or not os.path.exists(csv_path):
         init_database(db_path=db_path, csv_path=csv_path)
@@ -163,10 +204,12 @@ st.markdown("""
     <h1>📦 NorthStar Retail — E-Commerce Order Return Analytics</h1>
     <p>Operational decision-support dashboard measuring return velocity, root causes, financial leakage, and delivery delays.</p>
     <div>
+        <span class="meta-badge"><b>Project ID:</b> P088</span>
         <span class="meta-badge"><b>Student:</b> Abhishek Sharma</span>
-        <span class="meta-badge"><b>Roll No:</b> 2503201450007</span>
+        <span class="meta-badge"><b>University Roll No:</b> 2500320140007</span>
+        <span class="meta-badge"><b>Batch ID:</b> ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01</span>
         <span class="meta-badge"><b>Course:</b> MCA 2nd Year (Data Analytics)</span>
-        <span class="meta-badge"><b>Mentor:</b> Dinesh Sereno</span>
+        <span class="meta-badge"><b>Project Mentor:</b> Dinesh Sereno</span>
         <span class="meta-badge"><b>Institution:</b> ABES Engineering College, Ghaziabad</span>
     </div>
 </div>
@@ -563,7 +606,7 @@ with tabs[5]:
         {"SH ID": "SH-03", "Stakeholder": "Customer Support Lead", "App View": "Tab 2 Return Reasons Donut", "Primary Decision": "Refine customer feedback loops and return authorization rules"},
         {"SH ID": "SH-04", "Stakeholder": "Product / Category Manager", "App View": "Tab 4 Product Risk Matrix", "Primary Decision": "Audit vendor quality, update sizing guides, or delist high-return SKUs"},
         {"SH ID": "SH-05", "Stakeholder": "Warehouse / Fulfilment Lead", "App View": "Tab 3 Delivery Delay Analysis", "Primary Decision": "Address logistics courier bottlenecks and packaging damage rates"},
-        {"SH ID": "SH-06", "Stakeholder": "Student Developer (Abhishek Sharma)", "App View": "Entire Prototype & Pytest Suite", "Primary Decision": "Ensure academic rigor, clean architecture, and test coverage"},
-        {"SH ID": "SH-07", "Stakeholder": "Mentor (Dinesh Sereno)", "App View": "Academic Traceability & Report", "Primary Decision": "Verify academic excellence and project requirement fulfillment"}
+        {"SH ID": "SH-06", "Stakeholder": "Student Developer (Abhishek Sharma - Roll: 2500320140007, Batch: Batch 01)", "App View": "Entire Prototype & Pytest Suite", "Primary Decision": "Ensure academic rigor, clean architecture, and test coverage"},
+        {"SH ID": "SH-07", "Stakeholder": "Project Mentor (Dinesh Sereno)", "App View": "Academic Traceability & Report", "Primary Decision": "Verify academic excellence and project requirement fulfillment"}
     ]
     st.dataframe(pd.DataFrame(stakeholders), use_container_width=True)

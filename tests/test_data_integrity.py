@@ -1,7 +1,10 @@
 """
 Test Suite: Data Integrity & Schema Validation (SC-01)
 Validates dataset completeness, types, constraints, and business rules.
-Author: Abhishek Sharma (Roll No: 2503201450007)
+Project ID: P088
+Author: Abhishek Sharma (University Roll No: 2500320140007)
+Batch ID: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
+Project Mentor: Dinesh Sereno
 NorthStar Online Retail Pvt. Ltd.
 """
 

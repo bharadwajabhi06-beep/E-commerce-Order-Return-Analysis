@@ -8,7 +8,7 @@ Generates all 6 items required for Day 04 LMS Submission:
 5. Project documents (Step 1 through final step) — PDF
 6. Project ZIP file — ZIP
 
-Author: Abhishek Sharma (Roll No: 2503201450007)
+Author: Abhishek Sharma (Roll No: 2500320140007)
 Institution: ABES Engineering College, Ghaziabad
 Mentor: Dinesh Sereno
 """
@@ -73,7 +73,7 @@ class NumberedCanvas(canvas.Canvas):
             
             # Footer
             self.line(54, 50, 558, 50)
-            self.drawString(54, 38, "Student: Abhishek Sharma (2503201450007) | ABES Engineering College")
+            self.drawString(54, 38, "Project ID: P088 | Student: Abhishek Sharma (Roll: 2500320140007) | Batch: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01")
             page_text = f"Page {self._pageNumber} of {page_count}"
             self.drawRightString(558, 38, page_text)
             
@@ -203,13 +203,15 @@ def generate_project_document(filename="01_Project_Document.pdf"):
 
     # Meta Table
     meta_data = [
-        [Paragraph("Project ID / Title:", styles['TableHeader']), Paragraph("E-Commerce Order Return Analysis", styles['TableHeader'])],
+        [Paragraph("Project ID:", styles['TableHeader']), Paragraph("P088", styles['TableHeader'])],
+        [Paragraph("Project Title:", styles['MetaLabel']), Paragraph("E-Commerce Order Return Analysis", styles['MetaVal'])],
         [Paragraph("Domain:", styles['MetaLabel']), Paragraph("E-Commerce / Data Analytics", styles['MetaVal'])],
         [Paragraph("Student Name:", styles['MetaLabel']), Paragraph("Abhishek Sharma", styles['MetaVal'])],
-        [Paragraph("Roll Number:", styles['MetaLabel']), Paragraph("2503201450007", styles['MetaVal'])],
+        [Paragraph("University Roll Number:", styles['MetaLabel']), Paragraph("2500320140007", styles['MetaVal'])],
+        [Paragraph("Batch ID:", styles['MetaLabel']), Paragraph("ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01", styles['MetaVal'])],
         [Paragraph("Programme:", styles['MetaLabel']), Paragraph("MCA 2nd Year – Data Analytics", styles['MetaVal'])],
         [Paragraph("Institution:", styles['MetaLabel']), Paragraph("ABES Engineering College, Ghaziabad", styles['MetaVal'])],
-        [Paragraph("Academic Mentor:", styles['MetaLabel']), Paragraph("Dinesh Sereno", styles['MetaVal'])],
+        [Paragraph("Project Mentor:", styles['MetaLabel']), Paragraph("Dinesh Sereno", styles['MetaVal'])],
         [Paragraph("Assumed Organisation:", styles['MetaLabel']), Paragraph("NorthStar Online Retail Pvt. Ltd. (Noida, Uttar Pradesh)", styles['MetaVal'])],
         [Paragraph("Product Stack:", styles['MetaLabel']), Paragraph("Python, Streamlit, SQLite 3, Pandas, NumPy, Plotly, Pytest", styles['MetaVal'])],
         [Paragraph("Date of Submission:", styles['MetaLabel']), Paragraph(datetime.now().strftime("%B %d, %Y"), styles['MetaVal'])]
@@ -325,7 +327,7 @@ def generate_project_document(filename="01_Project_Document.pdf"):
     # Sign-off box
     sign_data = [
         [Paragraph("Prepared by (Student):", styles['MetaLabel']), Paragraph("Reviewed & Approved by (Academic Mentor):", styles['MetaLabel'])],
-        [Paragraph("<b>Abhishek Sharma</b><br/>Roll No: 2503201450007<br/>MCA 2nd Year (Data Analytics)", styles['MetaVal']),
+        [Paragraph("<b>Abhishek Sharma</b><br/>Roll No: 2500320140007<br/>MCA 2nd Year (Data Analytics)", styles['MetaVal']),
          Paragraph("<b>Dinesh Sereno</b><br/>Academic Mentor & Reviewer<br/>ABES Engineering College, Ghaziabad", styles['MetaVal'])]
     ]
     sign_table = Table(sign_data, colWidths=[252, 252])
@@ -366,10 +368,12 @@ def generate_project_presentation(pptx_filename="02_Project_Presentation.pptx", 
             "subtitle": "Decision Support Analytics System for NorthStar Online Retail Pvt. Ltd.",
             "type": "cover",
             "meta": [
-                "Student: Abhishek Sharma | Roll Number: 2503201450007",
+                "Project ID: P088",
+                "Student: Abhishek Sharma | University Roll No: 2500320140007",
+                "Batch ID: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01",
                 "Programme: MCA 2nd Year – Data Analytics",
                 "Institution: ABES Engineering College, Ghaziabad",
-                "Academic Mentor: Dinesh Sereno"
+                "Project Mentor: Dinesh Sereno"
             ]
         },
         {
@@ -538,7 +542,7 @@ def generate_project_presentation(pptx_filename="02_Project_Presentation.pptx", 
         footer_box = slide.shapes.add_textbox(Inches(0.8), Inches(6.9), Inches(11.7), Inches(0.4))
         ftf = footer_box.text_frame
         p_ft = ftf.paragraphs[0]
-        p_ft.text = "Abhishek Sharma (2503201450007) | MCA 2nd Year Data Analytics | ABES Engineering College, Ghaziabad"
+        p_ft.text = "Project ID: P088 | Abhishek Sharma (Roll: 2500320140007) | Batch: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 | Mentor: Dinesh Sereno"
         p_ft.font.size = Pt(10)
         p_ft.font.color.rgb = c_gray
 
@@ -579,7 +583,7 @@ def generate_project_presentation(pptx_filename="02_Project_Presentation.pptx", 
                 story.append(Spacer(1, 6))
 
         story.append(Spacer(1, 30))
-        story.append(Paragraph(f"<i>Slide {i+1} of {len(slides_content)} — Abhishek Sharma (2503201450007)</i>", styles['CalloutText']))
+        story.append(Paragraph(f"<i>Slide {i+1} of {len(slides_content)} — Abhishek Sharma (2500320140007)</i>", styles['CalloutText']))
         if i < len(slides_content) - 1:
             story.append(PageBreak())
 
@@ -606,8 +610,14 @@ def generate_github_report(filename="03_GitHub_Report.pdf"):
 
     repo_meta = [
         [Paragraph("Repository Item", styles['TableHeader']), Paragraph("Details", styles['TableHeader'])],
+        [Paragraph("Project ID:", styles['MetaLabel']), Paragraph("P088", styles['MetaVal'])],
+        [Paragraph("Student Name:", styles['MetaLabel']), Paragraph("Abhishek Sharma", styles['MetaVal'])],
+        [Paragraph("University Roll No:", styles['MetaLabel']), Paragraph("2500320140007", styles['MetaVal'])],
+        [Paragraph("Batch ID:", styles['MetaLabel']), Paragraph("ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01", styles['MetaVal'])],
+        [Paragraph("Project Mentor:", styles['MetaLabel']), Paragraph("Dinesh Sereno", styles['MetaVal'])],
         [Paragraph("Repository Name:", styles['MetaLabel']), Paragraph("E-Commerce-Order-Return-Analysis", styles['MetaVal'])],
         [Paragraph("Target URL:", styles['MetaLabel']), Paragraph("https://github.com/AbhishekSharma-MCA/E-Commerce-Order-Return-Analysis", styles['MetaVal'])],
+        [Paragraph("Live Streamlit App:", styles['MetaLabel']), Paragraph("https://e-commerce-order-return-analysis-jl7ggafckjfejfekad7uhp.streamlit.app/", styles['MetaVal'])],
         [Paragraph("Default Branch:", styles['MetaLabel']), Paragraph("main", styles['MetaVal'])],
         [Paragraph("License:", styles['MetaLabel']), Paragraph("MIT Academic License", styles['MetaVal'])],
         [Paragraph("Local Working Directory:", styles['MetaLabel']), Paragraph("C:\\Users\\welcome\\Downloads\\E-Commerce-Order-Return-Analysis", styles['MetaVal'])],
@@ -687,7 +697,7 @@ def generate_complete_code_pdf(filename="04_Complete_Code.pdf"):
 
     story.append(Paragraph("Complete Source Code Documentation", styles['DocTitle']))
     story.append(Paragraph("E-Commerce Order Return Analysis | NorthStar Online Retail Pvt. Ltd.", styles['DocSubtitle']))
-    story.append(Paragraph("Author: Abhishek Sharma | Roll No: 2503201450007 | Mentor: Dinesh Sereno", styles['MetaVal']))
+    story.append(Paragraph("Project ID: P088 | Author: Abhishek Sharma | University Roll No: 2500320140007 | Batch ID: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 | Project Mentor: Dinesh Sereno", styles['MetaVal']))
     story.append(Spacer(1, 15))
 
     code_files = [
@@ -746,6 +756,10 @@ def generate_project_steps_pdf(filename="05_Project_Documents_Step1_to_Final.pdf
 
     steps = [
         ("Step 1: Project Understanding & Problem Formulation", [
+            ("Project ID", "P088"),
+            ("Student & Roll No", "Abhishek Sharma (University Roll No: 2500320140007)"),
+            ("Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
+            ("Project Mentor", "Dinesh Sereno"),
             ("Assumed Retailer", "NorthStar Online Retail Pvt. Ltd. (Noida, UP; ~500 employees)."),
             ("Background", "Disparate spreadsheet tracking caused inaccurate return visibility and hidden revenue leakage."),
             ("Problem Statement", "The organisation lacks a single, consistent analytical view of order returns, making it difficult to measure return patterns, identify major return reasons and categories, and understand the value of returned orders."),

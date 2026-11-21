@@ -4,13 +4,15 @@
 ---
 
 ### Project Identification
+* **Project ID:** P088
 * **Title:** E-Commerce Order Return Analysis
 * **Domain:** E-Commerce / Data Analytics
 * **Student:** Abhishek Sharma
-* **Roll Number:** 2503201450007
+* **University Roll No:** 2500320140007
+* **Batch ID:** ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
 * **Programme:** MCA 2nd Year – Data Analytics
 * **Institution:** ABES Engineering College, Ghaziabad
-* **Academic Mentor:** Dinesh Sereno
+* **Project Mentor:** Dinesh Sereno
 * **Assumed Retailer:** NorthStar Online Retail Pvt. Ltd. (Noida, Uttar Pradesh; ~500 employees)
 
 ---
